@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cel.franklin.com.textmanipulation.MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/lightBlack"
+        android:gravity="left"
+        android:hint="@string/inicial_text"
+
+        />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/deepBlack"
+        android:scrollbars="none"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightBlack"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/button_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/left"
+                android:onClick="setTextLeft" />
+
+            <Button
+                android:id="@+id/button_center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/center"
+                android:onClick="setTextCenter" />
+
+            <Button
+                android:id="@+id/button_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/right"
+                android:onClick="setTextRight" />
+
+            <Button
+                android:id="@+id/button_up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/up"
+                android:onClick="upTextSize" />
+
+            <Button
+                android:id="@+id/button_down"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/down"
+                android:onClick="downTextSize" />
+
+            <Button
+                android:id="@+id/button_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text"
+                android:onClick="changeColorText" />
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/back"
+                android:onClick="changeBackGroundColor" />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/reset"
+                android:onClick="resetValues" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
