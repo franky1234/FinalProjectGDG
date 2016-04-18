@@ -16,7 +16,7 @@ HOW TO USE
 First of all touch in the app icon named S[m]T.
 Then apears the center and below regions :
 The center shows the editor text for write whatever we want.
-The below shows the 7 buttons options , for text manipulation:
+The below shows the 8 buttons options , for text manipulation:
 1 : Left alignement, by default.
 2 : Center alignement.
 3 : Right alignement.
